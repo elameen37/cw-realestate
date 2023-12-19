@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 body {
-  background-color: #f1f1f8;
+  background-color: #eaeaf3;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    color: rgb(4, 25, 117);
+}
+
+html::-webkit-scrollbar{
+  display: none;
 }
