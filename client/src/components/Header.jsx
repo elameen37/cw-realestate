@@ -33,7 +33,7 @@ export default function Header() {
     <header className="bg-indigo-200 shadow-md sticky top-0 z-50 transition-opacity duration-300 ease-in-out">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-4">
         <Link to="/">
-          <h1 className="font-mono font-bold text-sm sm:text-xl flex flex-wrap gap-0">
+          <h1 className="font-mono font-bold text-sm sm:text-xl flex flex-wrap">
             <span className="text-indigo-500">CW</span>
             <span className="text-indigo-700">-</span>
             <span className="text-indigo-950">RealEstate</span>
@@ -47,7 +47,7 @@ export default function Header() {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-transparent focus:outline-none items-end w-28 sm:w-64"
+              className="bg-transparent focus:outline-none items-center w-28 sm:w-64"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
