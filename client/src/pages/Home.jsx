@@ -57,7 +57,7 @@ export default function Home() {
         <div className='text-indigo-500 text-xs sm:text-sm'>
           CW-RealEstate is the best place to find your perfect home.
           <br />
-          Choose from our wide range of properties...
+         <p>Choose from our wide range of properties...</p>
         </div>
         <Link
           to={'/search'}

@@ -33,13 +33,13 @@ export default function Header() {
     <header className="bg-indigo-200 shadow-md sticky top-0 z-50 transition-opacity duration-300 ease-in-out">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-4">
         <Link to="/">
-          <h1 className="font-sans font-bold text-sm sm:text-xl flex flex-wrap">
+          <h1 className="font-sans font-extrabold text-sm sm:text-xl flex flex-wrap">
             <span className="text-indigo-500">CW</span>
             <span className="text-indigo-700">-</span>
             <span className="text-indigo-950">RealEstate</span>
           </h1>
         </Link>&nbsp;&nbsp;&nbsp;&nbsp;
-        <div className="flex font-mono items-center justify-end flex-grow">
+        <div className="flex font-serif font-medium items-center justify-end flex-grow">
           <form
             onSubmit={handleSubmit}
             className="bg-indigo-100 p-2 rounded-full justify-center items-center sm:flex"
@@ -95,7 +95,7 @@ export default function Header() {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="bg-indigo-200 sm:hidden">
-          <ul className="font-mono text-indigo-950 p-4">
+          <ul className="font-serif text-indigo-950 p-4">
             <li className="mb-2">
               <Link to="/" onClick={toggleMobileMenu}>
                 Home
