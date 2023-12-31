@@ -55,10 +55,9 @@ export default function Home() {
           place with ease
         </h1>
         <div className='text-indigo-500 text-xs sm:text-sm'>
-          CW-RealEstate is the best place to find your next perfect place to
-          live.
+          CW-RealEstate is the best place to find your perfect home.
           <br />
-          We have a wide range of properties for you to choose from.
+          Choose from our wide range of properties...
         </div>
         <Link
           to={'/search'}

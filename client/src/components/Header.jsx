@@ -33,12 +33,12 @@ export default function Header() {
     <header className="bg-indigo-200 shadow-md sticky top-0 z-50 transition-opacity duration-300 ease-in-out">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-4">
         <Link to="/">
-          <h1 className="font-mono font-bold text-sm sm:text-xl flex flex-wrap">
+          <h1 className="font-sans font-bold text-sm sm:text-xl flex flex-wrap">
             <span className="text-indigo-500">CW</span>
             <span className="text-indigo-700">-</span>
             <span className="text-indigo-950">RealEstate</span>
           </h1>
-        </Link>
+        </Link>&nbsp;&nbsp;&nbsp;&nbsp;
         <div className="flex font-mono items-center justify-end flex-grow">
           <form
             onSubmit={handleSubmit}
@@ -47,18 +47,18 @@ export default function Header() {
             <input
               type="text"
               placeholder="Search..."
-              className="bg-transparent focus:outline-none items-center w-28 sm:w-64"
+              className="bg-transparent focus:outline-none items-center w-24 sm:w-60"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
             <button>
               <FaSearch className="text-indigo-950" />
             </button>
-          </form>
+          </form>&nbsp;
           {/* Mobile menu button */}
           <button
             onClick={toggleMobileMenu}
-            className={`sm:hidden text-2xl ml-4 text-indigo-950 focus:outline-none transition duration-500 ease-in-out transform ${
+            className={`sm:hidden text-2xl ml-2 text-indigo-950 focus:outline-none transition duration-500 ease-in-out transform ${
               mobileMenuOpen ? 'rotate-2' : 'rotate-[180deg]'
             }`}
           >
@@ -118,7 +118,7 @@ export default function Header() {
                       src={currentUser.avatar}
                       alt="profile"
                     />
-                    {/* <span>Profile</span> */}
+                    <span>Profile</span>
                   </div>
                 ) : (
                   "Sign In"
