@@ -95,7 +95,7 @@ export default function Header() {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="bg-indigo-200 sm:hidden">
-          <ul className="font-serif text-indigo-950 p-4">
+          <ul className="font-serif text-indigo-950">
             <li className="mb-2">
               <Link to="/" onClick={toggleMobileMenu}>
                 Home
