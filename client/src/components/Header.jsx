@@ -39,7 +39,7 @@ export default function Header() {
             <span className="text-indigo-950">RealEstate</span>
           </h1>
         </Link>&nbsp;&nbsp;&nbsp;&nbsp;
-        <div className="flex font-serif font-medium items-center justify-end flex-grow">
+        <div className="flex font-normal text-base items-center justify-end flex-grow">
           <form
             onSubmit={handleSubmit}
             className="bg-indigo-100 p-2 rounded-full justify-center items-center sm:flex"
@@ -67,12 +67,12 @@ export default function Header() {
           {/* Desktop menu */}
           <ul className="flex gap-4">
             <Link to="/">
-              <li className="hidden sm:inline-block mx-2 sm:mx-4 text-xs sm sm:text-lg text-indigo-950 hover:opacity-75">
+              <li className="hidden sm:inline-block mx-2 sm:mx-4 text-xs sm sm:text-base text-indigo-950 hover:opacity-75">
                 Home
               </li>
             </Link>
             <Link to="/about">
-              <li className="hidden sm:inline-block mx-2 sm:mx-4 text-xs sm sm:text-lg text-indigo-950 hover:opacity-75">
+              <li className="hidden sm:inline-block mx-2 sm:mx-4 text-xs sm sm:text-base text-indigo-950 hover:opacity-75">
                 About
               </li>
             </Link>
@@ -84,7 +84,7 @@ export default function Header() {
                   alt="profile"
                 />
               ) : (
-                <li className="hidden sm:inline-block mx-2 sm:mx-4 text-xs sm sm:text-lg text-indigo-950 hover:opacity-75">
+                <li className="hidden sm:inline-block mx-2 sm:mx-4 text-xs sm sm:text-base text-indigo-950 hover:opacity-75">
                   Sign In
                 </li>
               )}
@@ -94,8 +94,8 @@ export default function Header() {
       </div>
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="bg-indigo-200 sm:hidden">
-          <ul className="font-serif text-indigo-950">
+        <div className="ml-4 bg-indigo-200 sm:hidden">
+          <ul className="text-indigo-950">
             <li className="mb-2">
               <Link to="/" onClick={toggleMobileMenu}>
                 Home
